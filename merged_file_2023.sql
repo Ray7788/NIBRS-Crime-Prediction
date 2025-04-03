@@ -12,3 +12,6 @@ on inc.incident_id = offense.incident_id
 
 left join public.nibrs_offense_type offense_type -- 572438
 on offense.offense_code = offense_type.offense_code
+
+left join public.nibrs_location_type loc_type -- 572438
+on loc_type.location_id = offense.LOCATION_ID
