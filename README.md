@@ -66,7 +66,7 @@ This part includes the model training and evaluation steps.
 There are three models trained and evaluated, including:
 - CatBoost Classifier
 - Random Forest Classifier
-- Single Layer Neural Network
+- Linear Regression
 
 All model training and evaluation steps are performed in the Models folder.
 
