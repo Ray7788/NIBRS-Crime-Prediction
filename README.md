@@ -18,24 +18,22 @@ The project is structured into several folders, each containing specific compone
 - Models: This folder contains the model training and evaluation notebooks. It includes the implementation of various machine learning models, such as CatBoost Classifier, Random Forest Classifier, and Linear Regression.
 - Preprocessing: This folder contains the preprocessing scripts and notebooks used to clean and prepare the data for analysis. It includes data cleaning, handling missing values, and encoding categorical variables.
 
-FeatureEng_ClearVersion.ipynb
-This notebook contains the final version of the feature engineering process.
+FeatureEng_ClearVersion.ipynb: This notebook contains the final version of the feature engineering process.
 
-Model_merged_model.ipynb
-This notebook contains the final version of the model training and evaluation process.
+Model_merged_model.ipynb: This notebook contains the final version of the model training and evaluation process.
 
 # Source data
 
 This dataset utilizes two comprehensive crime datasets as stated below:
 - 1. Chicago Crime Dataset: This dataset contains Official dataset from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) System. It is publicly available and can be accessed through the City of Chicago's Data Portal. We use Chicago dataset for training and initial validation.
-Data range is from 2020 to 2021.
-Downloaded from: 
+Data range is from 2020 to 2025.
+Downloaded from: https://data.cityofchicago.org/
 
 - 2. NIBRS (National Incident-Based Reporting System): This dataset provides detailed information about crime incidents reported by law enforcement agencies across the United States. We apply trained models to NIBRS data, to test model performance across different features and data distributions. 
 Data range: 2023
 Downloaded from: "Crime Incident-Based Data by State" (Illinois) 
 
-We choose `Illinois` as the target state for NIBRS dataset, as it is also compatible with the Chicago Crime Dataset due to its geographical proximity (Chicago is located in Illinois) and the fact that both datasets are from the same state.
+We choose `Illinois` as the target state for NIBRS dataset, as it is also compatible with the Chicago Crime Dataset due to its geographical proximity (Chicago is located in Illinois but not specifically listed in test dataset) and the fact that both datasets are from the same state.
 
 
 # Data Processing
@@ -87,4 +85,4 @@ The contributions are as follows:
 Please check the `requirements.txt` in the root directory for the list of dependencies required to run the project.
 - Python 3.10 or higher
 
-When you run notebooks, pleasebe careful handling file paths as it might not be totally suitable for your local environment.
+When you run notebooks, please be careful handling file paths as it might not be totally suitable for your local environment.
