@@ -1,0 +1,9 @@
+# Required Python packages/libraries
+pandas
+holidays
+catboost==1.2.7
+numpy==1.26.4
+scikit-learn
+matplotlib
+seaborn
+joblib
